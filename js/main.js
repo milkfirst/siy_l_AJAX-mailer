@@ -14,13 +14,12 @@ import { SendMail } from "./components/mailer.js";
             processMailFailure(result) {
                 // show a failure message in the UI
                 // use this.$refs to connect to the elements on the page and mark any empty fields/inputs with an error class
-                alert('failure! and if you keep using an alert, DOUBLE failure!');        
+                this.$refs.popUpMessage.innerHTML = "Something went wrong with the form";
                 // show some errors in the UI here to let the user know the mail attempt was successful
             },
-
             processMailSuccess(result) {
                 // show a success message in the UI
-                alert("success! but don't EVER use alerts. They are gross.");        
+                this.$refs.popUpMessage.innerHTML = "Sucess!! Thanks for emailing me :)";   
                 // show some UI here to let the user know the mail attempt was successful
             },
 
@@ -31,5 +30,5 @@ import { SendMail } from "./components/mailer.js";
                     .catch(err => this.processMailFailure(err));
             }
         }
-    }).mount('#mail-form')
+    }).mount('main')
 })();

@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="send.php">
 </head>
 <body>
-    <main>
+    <main id="main">
         <h1 class="hidden">Mail Reference for API Processing</h1>
         <h2>Contact us</h2>
         <p>
@@ -19,13 +19,11 @@
 
         <hr class="separator">
 
-        <h2 class="mail-header">Processing Mail with AJAX</h2>
+        <h2 class="mail-header" ref="popUpMessage">Processing Mail with AJAX</h2>
 
         <form action="mail.php" method="POST" id="mail-form">
-            <div class="form-group">
-                <label for="firstname" class="form-content">First Name</label>
-                <input ref="fname" type="text" id="firstname" name="firstname" required="required">
-            </div>
+            <label for="firstname">First Name</label>
+            <input ref="fname" type="text" id="firstname" name="firstname" required="required">
 
             <label for="lastname">Last Name</label>
             <input ref="lname" type="text" id="lastname" name="lastname" required>
@@ -38,7 +36,7 @@
 
             <label for="phone">Your Phone # <i>(optional)</i></label>
             <input ref="phone" type="tel" value="tel" name="phone">
-            
+
             <div class="wrapper">
                 <input @click.prevent="processMail" type="submit" class="submit" value="Go!">
                 <i class="fas fa-paper-plane"></i>
