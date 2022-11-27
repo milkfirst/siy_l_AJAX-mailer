@@ -6,8 +6,7 @@ async function SendMail(targetForm) {
     // mail stuff goes here
     let formData = new FormData(targetForm),
         formFieldErrors = false;
-
-    let result = await fetch(`./${targetForm.getAttribute("action")}`, {
+    let result = await fetch(`${targetForm.getAttribute("action")}`, {
         method: targetForm.method,
         body: formData,
     }).then(response => {
@@ -18,6 +17,7 @@ async function SendMail(targetForm) {
     })
 
     let mailStatus = await result.json();
+
 
     if (formFieldErrors) {
         throw new Error(JSON.stringify(mailStatus));

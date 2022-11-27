@@ -7,6 +7,9 @@ Hi, fortunately, I somewhat figured it out.
 ## Built with
 * PHP
 
+## To access
+Go to https://email.badlilkiddo.ca/ to access the mail form. :D
+
 ## Installing
 
 Open Terminal or Command Line

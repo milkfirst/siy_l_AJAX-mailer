@@ -31,5 +31,5 @@ import { SendMail } from "./components/mailer.js";
                     .catch(err => this.processMailFailure(err));
             }
         }
-    }).mount('main')
+    }).mount('#mail-form')
 })();
