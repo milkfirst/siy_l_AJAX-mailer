@@ -14,7 +14,7 @@ Open Terminal or Command Line
 ```
 # Pick the location of where this repository will be downloaded, for example purposes this will be on your desktop
 
-$ cd Desktop https://github.com/milkfirst/siy_lalaine_fitzgeorge_carson-Hackathon.git
+$ cd Desktop https://github.com/milkfirst/siy_l_AJAX-mailer.git
 
 # Clone this repository into your local machine
 
