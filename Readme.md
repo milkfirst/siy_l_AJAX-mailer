@@ -22,6 +22,6 @@ $ git clone
 
 # Go into the repository
 
-$ cd siy_lalaine_fitzgeorge_carson-Hackathon
+$ cd siy_l_AJAX-mailer
 
 ```
