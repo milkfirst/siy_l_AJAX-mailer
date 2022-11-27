@@ -2,7 +2,7 @@
 by Lalaine S
 
 ## Getting Started
-Hi, unfortunately, I have no clue what's going on.
+Hi, fortunately, I somewhat figured it out.
 
 ## Built with
 * PHP
