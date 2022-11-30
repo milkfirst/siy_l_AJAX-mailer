@@ -15,6 +15,7 @@ import { SendMail } from "./components/mailer.js";
                 // show a failure message in the UI
                 // use this.$refs to connect to the elements on the page and mark any empty fields/inputs with an error class
                 this.$refs.popUpMessage.innerHTML = "Something went wrong with the form";
+                console.log(result);
                 // show some errors in the UI here to let the user know the mail attempt was successful
             },
             processMailSuccess(result) {
@@ -30,5 +31,5 @@ import { SendMail } from "./components/mailer.js";
                     .catch(err => this.processMailFailure(err));
             }
         }
-    }).mount('main')
+    }).mount('#mail-form')
 })();

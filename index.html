@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
 
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="send.php">
 </head>
 <body>
     <main id="main">
@@ -19,11 +18,11 @@
 
         <hr class="separator">
 
-        <h2 class="mail-header" ref="popUpMessage">Processing Mail with AJAX</h2>
+        <h2 class="mail-header">Processing Mail with AJAX</h2>
 
-        <form action="mail.php" method="POST" id="mail-form">
+        <form action="/includes/send.php" method="POST" id="mail-form" data-v-app>
             <label for="firstname">First Name</label>
-            <input ref="fname" type="text" id="firstname" name="firstname" required="required">
+            <input ref="fname" type="text" id="firstname" name="firstname" required>
 
             <label for="lastname">Last Name</label>
             <input ref="lname" type="text" id="lastname" name="lastname" required>
@@ -36,6 +35,8 @@
 
             <label for="phone">Your Phone # <i>(optional)</i></label>
             <input ref="phone" type="tel" value="tel" name="phone">
+
+            <p class="mail-header" ref="popUpMessage"></p>
 
             <div class="wrapper">
                 <input @click.prevent="processMail" type="submit" class="submit" value="Go!">

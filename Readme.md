@@ -2,10 +2,13 @@
 by Lalaine S
 
 ## Getting Started
-Hi, unfortunately, I have no clue what's going on.
+Hi, fortunately, I somewhat figured it out.
 
 ## Built with
 * PHP
+
+## To access
+Go to https://email.badlilkiddo.ca/ to access the mail form. :D
 
 ## Installing
 
